@@ -3,31 +3,32 @@
  "url": "https://benzeneai.com",
  "name": "Benzene",
  "dark": false,
- "tagline": "Small models. Stable bonds.",
- "what": "The site of Benzene, an independent AI lab. It presents itself like a page from a chemistry journal.",
+ "tagline": "AI lab site laid out like a figure in a chemistry journal.",
+ "what": "The site of Benzene, an independent AI lab.",
  "points": [
-  "A scientific-figure look: a labelled benzene ring with \"Fig. 1, benzene C6H6\", a 1.39 angstrom bond dimension and a pi-cloud callout inside a dotted compass circle.",
-  "Libre Caslon Display for the huge \"Benzene\" wordmark and Libre Caslon Text for captions, in ink blue (#243E52) on pale blue-grey.",
-  "The ring can be dragged to turn it in 3D, with the hint \"Drag to turn\" in italic beside the control.",
-  "\"Fuse a ring\" adds a ring and relabels the figure (Fig. 3, phenanthrene C14H10), so the one control shows the brand idea of stable bonds.",
-  "Corner crop marks and a single email link keep the page quiet."
+  "The page is laid out like a figure plate: a line-drawn benzene ring inside a dotted compass circle, with tick marks at the quarters, crop marks in the page corners and a caption in journal style, 'Fig. 1, benzene C6H6'.",
+  "The drawing uses technical annotation as decoration: a π callout on a leader line, a 1.39 Å bond dimension with end ticks, shaded electron clouds and a dashed axis through the ring.",
+  "Type: Libre Caslon Display for the large 'Benzene' wordmark and Libre Caslon Text for captions, in ink blue (#243E52) on pale blue-grey. Italics mark the figure number and the 'Drag to turn' hint.",
+  "Interaction: the ring can be dragged to turn it in 3D. 'Fuse a ring' adds a ring, fills the button dark and relabels the caption with the new molecule's name and formula, so one control carries the 'Stable bonds' idea.",
+  "The layout stays sparse: the wordmark and tagline bottom left, the figure on the right, and one email link top right as the only navigation.",
+  "Mobile: the figure moves to the top at full width, with the caption and controls under it and the wordmark last."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Benzene at rest, Fig. 1"
+   "caption": "Fig. 1, benzene, with the π callout and the 1.39 Å bond dimension showing."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "Dragging the ring to turn it"
+   "caption": "Dragging turns the ring in 3D: the hexagon tilts, the hydrogen labels move with it and the double-bond lines redraw."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Fuse a ring, a second ring joins"
+   "caption": "Fuse a ring: a second ring joins, the button fills dark and the caption becomes 'Fig. 2, naphthalene C10H8'."
   },
   {
    "file": "flow-4.jpg",
-   "caption": "Fused again, Fig. 3 phenanthrene"
+   "caption": "Fused again: a third ring joins at an angle and the caption reads 'Fig. 3, phenanthrene C14H10'."
   }
  ],
  "shots": [

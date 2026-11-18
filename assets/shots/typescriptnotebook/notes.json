@@ -3,23 +3,25 @@
  "url": "https://typescriptnotebook.com",
  "name": "TypeScript Notebook",
  "dark": false,
- "tagline": "Run TypeScript in the browser.",
- "what": "A notebook for writing and running TypeScript cells in the browser. It is for trying code quickly without setting up a project.",
+ "tagline": "Browser notebook UI that opens straight into working code.",
+ "what": "A notebook for writing and running TypeScript cells in the browser, without setting up a project.",
  "points": [
-  "Opens straight into a working notebook with a sample cell, no landing page in front of it.",
-  "Dark editor-style UI in Inter, with a simple toolbar: New notebook, Import, Download, Run All, Add code, Add markdown.",
-  "Cells carry execution counters like [1] and markdown cells are marked [M], echoing Jupyter.",
-  "Output appears directly under the cell, including npm install logs and printed JSON, so the result sits next to the code.",
-  "A yellow banner asks visitors to sign in to save, and a blue Sign in button sits top right."
+  "There is no landing page in front of the product: the URL opens straight into a notebook with a sample cell that has already run.",
+  "Dark editor-style UI with a single text toolbar under the notebook title (New notebook, Import from Computer, Download, Run All, Add code, Add markdown), so every action is visible and none is hidden in a menu.",
+  "State is shown in the header: the notebook gets a date-stamped name and an 'Unsaved' flag with a warning icon in red, next to a blue 'Sign in' button that is the only filled control on the page.",
+  "Cells carry Jupyter-style gutter labels, [M] for markdown and [1] for code, in small grey type that stays out of the way of the content.",
+  "Output sits directly under the code cell in the same monospace, with the npm install log first and the printed JSON after it, so the result reads as a continuation of the code.",
+  "A full-width yellow banner along the bottom asks visitors to sign in to save, with a Dismiss control, the one warm colour on a grey screen.",
+  "On a phone the toolbar wraps into lines beside the logo and long code lines scroll sideways inside the cell."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Sample cell before running"
+   "caption": "The notebook as it opens: a markdown title cell and a code cell that installs axios and fetches a sample todo, with the install log and the JSON response underneath."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "A later run, npm install log and the fetched JSON in the output"
+   "caption": "The same sample after another run: the output under the cell is unchanged, with the install log followed by the fetched JSON."
   }
  ],
  "shots": [

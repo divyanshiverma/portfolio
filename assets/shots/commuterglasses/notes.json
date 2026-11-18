@@ -3,23 +3,24 @@
  "url": "https://commuterglasses.com",
  "name": "Commuter",
  "dark": false,
- "tagline": "Sunglasses that show your book.",
- "what": "A pre-launch page for sunglasses that float an ebook in front of your eye. The goal is a $1 reservation that holds a pair at 20% off.",
+ "tagline": "Photo-led pre-launch page built around one $1 reserve button.",
+ "what": "A pre-launch page for sunglasses that float an ebook in front of the eye. A $1 reservation holds a pair at 20% off.",
  "points": [
-  "Full-bleed dark photo of a Kindle next to a glowing green projected page, so the product is shown before it is explained.",
-  "Archivo set very large and white over the photo, with a spaced-out wordmark and a plain nav of Features, FAQ and Reserve.",
-  "One conversion action repeated: \"Reserve for $1\" in the hero, in the nav, in the feature stories and at the foot, with a waitlist email field as the fallback.",
-  "The $1 reservation opens a Stripe checkout for \"Commuter Glasses Early Bird Reservation\", so the deposit is small and the payment step is familiar.",
-  "The page has no dark mode, only the photo-led dark hero."
+  "The hero is a full-bleed dark photo of a Kindle beside a glowing green projected page, so the product idea is shown before it is explained. The headline sits in the dark upper left, clear of the glow.",
+  "Type: Archivo set very large in white over the photo, with a widely spaced capital wordmark and a short nav of Features, FAQ and Reserve.",
+  "One conversion action: a filled white 'Reserve for $1' button with the terms right beside it ('$1 holds your pair. 20% off at launch.'), echoed by an outlined 'Reserve' in the nav and repeated further down the page.",
+  "After the hero the page switches to white feature sections: a portrait photo on one side and a large headline on the other ('Looks like sunglasses. Reads like a Kindle.'), with plain short paragraphs.",
+  "The deposit goes through a standard Stripe checkout, so the payment step is familiar and the amount stays small.",
+  "Mobile: the nav keeps only the wordmark and the Reserve button, the button grows to a full-width-feeling block, and the photo sits below the copy so the green page stays in view."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Hero with the Reserve for $1 button"
+   "caption": "The hero with its 'Reserve for $1' button and the terms beside it."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "Stripe checkout for the $1 early bird reservation (not paid)"
+   "caption": "Clicking it opens Stripe checkout for the 'Commuter Glasses Early Bird Reservation' at US$1.00. Stopped here, not paid."
   }
  ],
  "shots": [

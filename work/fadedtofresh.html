@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Faded to Fresh, a case study by Divyanshi Verma</title>
-<meta name="description" content="Faded to Fresh: Restore and colourise old family photos, then download in HD.">
+<meta name="description" content="Faded to Fresh: Photo restoration web app with a crop step and one-screen checkout.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
@@ -26,23 +26,26 @@
 <main id="main">
 <article>
 <header class="p-head">
-  <div><h1>Faded to Fresh</h1><p class="tag">Restore and colourise old family photos, then download in HD.</p></div>
-  <div><p class="what">A web app from ShaluAI for restoring and colourising old prints. A person uploads a scan or phone photo, crops it, picks a pack and pays to download the HD result, with no signup needed.</p><a class="live" href="https://fadedtofresh.shalu.ai/app/" rel="noopener">Visit fadedtofresh.shalu.ai</a></div>
+  <div><h1>Faded to Fresh</h1><p class="tag">Photo restoration web app with a crop step and one-screen checkout.</p></div>
+  <div><p class="what">A ShaluAI web app for restoring and colourising old prints. A person uploads a scan or phone photo, crops it, picks a pack and pays to download the HD result, with no signup.</p><a class="live" href="https://fadedtofresh.shalu.ai/app/" rel="noopener">Visit fadedtofresh.shalu.ai</a></div>
 </header>
 <div class="p-hero"><img src="../assets/shots/fadedtofresh/desktop-light.webp" alt="Faded to Fresh home page on desktop" width="1440" height="900" decoding="async"></div>
 <section class="block" aria-labelledby="h-pt"><h2 id="h-pt">Design decisions</h2><ul class="points">
-<li>The upload screen is one card with a dashed drop zone, a before-and-after pair of polaroid-style portraits as the visual promise, and a single raspberry-pink 'Choose photo' button.</li>
-<li>Typography is Schibsted Grotesk with tight, heavy headings in navy on a soft off-white (#FAF9F7), and a handwritten-style Faded to Fresh logo where 'Fresh' is pink and underlined in yellow.</li>
-<li>A persistent right column holds the 'HD credits' state, the Your photos list and a sign-in button, so the app shows account state before any login.</li>
-<li>The crop step is labelled '01 / PREPARE' and uses four pink corner handles, with Rotate 90 degrees, Use whole photo and Choose another as secondary buttons under a single Continue.</li>
-<li>The pack screen shows three tiers with the single photo preselected, a struck-through price with a Diwali sale tag, and three reassurance rows below the buy button: 30-day money-back, instant HD download and no signup.</li>
+<li>Upload screen: one white card with a dashed drop zone. The only image is a tilted pair of polaroid prints, a faded sepia portrait and the same portrait restored in colour, which explains the product without a line of copy.</li>
+<li>One filled raspberry-pink 'Choose photo' button, with the formats and size limit in small grey text below ('JPG, PNG, WEBP · up to 12 MB'), so the constraints are visible before anyone uploads.</li>
+<li>Type and colour: Schibsted Grotesk with tight, heavy navy headings on an off-white page (#FAF9F7). The wordmark sets 'Faded' in grey and 'Fresh' in pink with a yellow underline, the before-and-after idea again in two colours.</li>
+<li>A right-hand column holds 'Restore another photo', a 'Your photos' list with a count and a sign-in prompt, and the header carries an 'HD credits: 0' pill. Account state is visible from the first screen without asking anyone to log in.</li>
+<li>Crop step: labelled '01 / PREPARE' with a one-line instruction. Four large pink handles sit on the corners of a pink-tinted frame, with Rotate 90°, Use whole photo and Choose another as outlined secondary buttons above a full-width pink primary button.</li>
+<li>Pack screen: three stacked tier cards. '1 photo' is preselected with a pink border and a 'Most popular' tag, its ₹100 price struck through to ₹50 beside a 'Diwali sale 50% off' badge. The bulk tiers show a per-photo price (₹25, ₹20), so the saving is clear without a comparison table.</li>
+<li>Below the 'Select 1 photo' button, icon rows answer the usual doubts before payment: 30-day money-back, instant HD download and no signup.</li>
+<li>Mobile: the card goes full width with the polaroids enlarged, and the sidebar content moves below the card.</li>
 </ul></section>
 <section class="block" aria-labelledby="h-ph"><h2 id="h-ph">On a phone</h2><div class="phones">
 <figure><div class="frame"><img src="../assets/shots/fadedtofresh/mobile-light.webp" alt="Faded to Fresh, phone, light theme at 390 px" width="780" height="1688" loading="lazy" decoding="async"></div><figcaption>Phone, light</figcaption></figure>
 </div><p class="note">Faded to Fresh has a single theme, so there is one set of captures.</p></section>
 <section class="block" aria-labelledby="h-fl"><h2 id="h-fl">The flow, step by step</h2><div class="flow" tabindex="0" aria-label="Flow steps, scroll sideways">
-<figure><span class="step">1</span><img src="../assets/shots/fadedtofresh/flow-1.webp" alt="Faded to Fresh step 1: Crop step after uploading a test image, with pink corner handles" width="1440" height="900" loading="lazy" decoding="async"><figcaption>Crop step after uploading a test image, with pink corner handles</figcaption></figure>
-<figure><span class="step">2</span><img src="../assets/shots/fadedtofresh/flow-2.webp" alt="Faded to Fresh step 2: Pack choice screen shown after Continue; stopped here, no payment made" width="1440" height="900" loading="lazy" decoding="async"><figcaption>Pack choice screen shown after Continue; stopped here, no payment made</figcaption></figure>
+<figure><span class="step">1</span><img src="../assets/shots/fadedtofresh/flow-1.webp" alt="Faded to Fresh step 1: Crop step after upload: the four pink handles start at the image's corners and can be dragged inwards, with Rotate 90°, Use whole photo and Choose another below. The test upload was a screenshot of the app, not an old print." width="1440" height="900" loading="lazy" decoding="async"><figcaption>Crop step after upload: the four pink handles start at the image's corners and can be dragged inwards, with Rotate 90°, Use whole photo and Choose another below. The test upload was a screenshot of the app, not an old print.</figcaption></figure>
+<figure><span class="step">2</span><img src="../assets/shots/fadedtofresh/flow-2.webp" alt="Faded to Fresh step 2: Pack screen after the crop: a summary card shows the cropped thumbnail, '1 photo' is preselected at the sale price, and the sidebar now lists 'Photo 1, Ready to restore'. Stopped here, no payment made." width="1440" height="900" loading="lazy" decoding="async"><figcaption>Pack screen after the crop: a summary card shows the cropped thumbnail, '1 photo' is preselected at the sale price, and the sidebar now lists 'Photo 1, Ready to restore'. Stopped here, no payment made.</figcaption></figure>
 </div></section>
 <section class="block" aria-labelledby="h-lg"><h2 id="h-lg">Further down the page</h2><figure class="long"><img src="../assets/shots/fadedtofresh/desktop-long.webp" alt="Faded to Fresh, a section further down the home page" width="1440" height="900" loading="lazy" decoding="async"></figure></section>
 </article>

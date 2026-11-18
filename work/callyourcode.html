@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CallYourCode, a case study by Divyanshi Verma</title>
-<meta name="description" content="CallYourCode: Talk to your coding agents from your phone.">
+<meta name="description" content="CallYourCode: Paper-toned developer site told through real app screens.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
@@ -26,25 +26,27 @@
 <main id="main">
 <article>
 <header class="p-head">
-  <div><h1>CallYourCode</h1><p class="tag">Talk to your coding agents from your phone.</p></div>
-  <div><p class="what">An open source tool that puts terminal coding agents such as Claude Code and Codex into a chat app with voice. It is made for developers who want to keep agents working while away from the laptop.</p><a class="live" href="https://callyourcode.com" rel="noopener">Visit callyourcode.com</a></div>
+  <div><h1>CallYourCode</h1><p class="tag">Paper-toned developer site told through real app screens.</p></div>
+  <div><p class="what">An open source tool that puts terminal coding agents such as Claude Code and Codex into a chat app on the phone, with voice.</p><a class="live" href="https://callyourcode.com" rel="noopener">Visit callyourcode.com</a></div>
 </header>
 <div class="p-hero"><img src="../assets/shots/callyourcode/desktop-light.webp" alt="CallYourCode home page on desktop" width="1440" height="900" decoding="async"></div>
 <section class="block" aria-labelledby="h-pt"><h2 id="h-pt">Design decisions</h2><ul class="points">
-<li>Warm paper background (#F6F2EC) with dark brown text (#211B14) and a copper accent, set entirely in IBM Plex Sans with monospace for code and labels.</li>
-<li>The hero shows a terminal window overlapped by a phone mockup of the chat, with the install command in a copy-to-clipboard box under the copy.</li>
-<li>A plugin section uses pill tabs (Crons, Git, Files, TUI); each tab swaps the screenshot below and a one-line description.</li>
-<li>The Files tab renders a real file tree and a syntax-coloured README preview, which shows the feature instead of describing it.</li>
-<li>A dark theme is available through a toggle in the header and changes the page to a near-black brown while the terminal stays dark.</li>
+<li>Palette: warm paper (#F6F2EC) with dark brown text (#211B14) and a copper accent, closer to a notebook than the usual black developer site. Copper is saved for eyebrow labels, the selected tab and the app icon.</li>
+<li>Type: IBM Plex Sans for headlines and body, with IBM Plex Mono for eyebrow labels ('Open source · runs on your machine') and the install command, so code-flavoured lines are set apart by typeface as well as colour.</li>
+<li>Hero: a dark terminal window overlapped by a phone mockup of the chat, both showing the same request and result. One picture explains the product. The install command sits under the copy in a box with a copy button.</li>
+<li>Plugins section: pill tabs (Crons, Git, Files, TUI) each swap a one-line description and a full app screenshot below. The selected pill takes a copper tint and border; the others stay outlined.</li>
+<li>The tab screenshots are real app states, not illustrations: a schedule panel with toggles, a diff with added lines in green, a file tree with a README preview, and the live terminal pane.</li>
+<li>Feature groups such as 'The two freedoms' sit in one card split by hairline dividers, each column a short heading over a plain paragraph.</li>
+<li>Mobile: the header keeps only the icon beside Docs and GitHub, and the terminal-and-phone mockup scales down as one unit with the overlap intact.</li>
 </ul></section>
 <section class="block" aria-labelledby="h-ph"><h2 id="h-ph">On a phone</h2><div class="phones">
 <figure><div class="frame"><img src="../assets/shots/callyourcode/mobile-light.webp" alt="CallYourCode, phone, light theme at 390 px" width="780" height="1688" loading="lazy" decoding="async"></div><figcaption>Phone, light</figcaption></figure>
 </div></section>
 <section class="block" aria-labelledby="h-fl"><h2 id="h-fl">The flow, step by step</h2><div class="flow" tabindex="0" aria-label="Flow steps, scroll sideways">
-<figure><span class="step">1</span><img src="../assets/shots/callyourcode/flow-1.webp" alt="CallYourCode step 1: Plugins section, Crons tab selected" width="1440" height="900" loading="lazy" decoding="async"><figcaption>Plugins section, Crons tab selected</figcaption></figure>
-<figure><span class="step">2</span><img src="../assets/shots/callyourcode/flow-2.webp" alt="CallYourCode step 2: Git tab selected" width="1440" height="900" loading="lazy" decoding="async"><figcaption>Git tab selected</figcaption></figure>
-<figure><span class="step">3</span><img src="../assets/shots/callyourcode/flow-3.webp" alt="CallYourCode step 3: Files tab with file tree and README preview" width="1440" height="900" loading="lazy" decoding="async"><figcaption>Files tab with file tree and README preview</figcaption></figure>
-<figure><span class="step">4</span><img src="../assets/shots/callyourcode/flow-4.webp" alt="CallYourCode step 4: TUI tab selected" width="1440" height="900" loading="lazy" decoding="async"><figcaption>TUI tab selected</figcaption></figure>
+<figure><span class="step">1</span><img src="../assets/shots/callyourcode/flow-1.webp" alt="CallYourCode step 1: Crons tab selected: the app screenshot shows the session list, a conversation and a 'Scheduled and recurring messages' panel with an on/off toggle for each schedule." width="1440" height="900" loading="lazy" decoding="async"><figcaption>Crons tab selected: the app screenshot shows the session list, a conversation and a 'Scheduled and recurring messages' panel with an on/off toggle for each schedule.</figcaption></figure>
+<figure><span class="step">2</span><img src="../assets/shots/callyourcode/flow-2.webp" alt="CallYourCode step 2: Git tab: the description changes and the screenshot swaps to the repo view, with the changed file on the left and its diff on the right, added lines in green." width="1440" height="900" loading="lazy" decoding="async"><figcaption>Git tab: the description changes and the screenshot swaps to the repo view, with the changed file on the left and its diff on the right, added lines in green.</figcaption></figure>
+<figure><span class="step">3</span><img src="../assets/shots/callyourcode/flow-3.webp" alt="CallYourCode step 3: Files tab: a project file tree with README.md selected and its line-numbered preview open, headings in colour." width="1440" height="900" loading="lazy" decoding="async"><figcaption>Files tab: a project file tree with README.md selected and its line-numbered preview open, headings in colour.</figcaption></figure>
+<figure><span class="step">4</span><img src="../assets/shots/callyourcode/flow-4.webp" alt="CallYourCode step 4: TUI tab: the screenshot becomes the live black terminal pane, running the same Claude Code session shown in the hero." width="1440" height="900" loading="lazy" decoding="async"><figcaption>TUI tab: the screenshot becomes the live black terminal pane, running the same Claude Code session shown in the hero.</figcaption></figure>
 </div></section>
 <section class="block" aria-labelledby="h-lg"><h2 id="h-lg">Further down the page</h2><figure class="long"><img src="../assets/shots/callyourcode/desktop-long.webp" alt="CallYourCode, a section further down the home page" width="1440" height="900" loading="lazy" decoding="async"></figure></section>
 </article>

@@ -1,31 +1,33 @@
 {
  "url": "https://shalu.ai",
  "name": "ShaluAI",
- "tagline": "Friendly AI for everyday life.",
- "what": "ShaluAI is a landing page for a friendly everyday AI, told through a lamp on a shelf rather than a product screenshot. It invites visitors to say hello instead of selling features.",
+ "tagline": "A lamp with a pull cord that switches the page from day to night.",
+ "what": "A landing page for a friendly everyday AI, told through a lamp on a shelf instead of a product screenshot.",
  "points": [
-  "A large high-contrast serif wordmark in brown (#49372E) on a warm yellow wall with a faint patterned wallpaper, paired with DM Sans for the tagline.",
-  "The mascot is a smiling lamp on a book with a plant and a cup of chai, drawn with a hand-inked outline.",
-  "A handwritten \"Hello\" types itself out beside the lamp, and a small arrow points at the pull cord.",
-  "Pulling the cord (drag it down) turns the page into night: the wall goes deep purple, a window shadow appears, the lamp sleeps with Zs and says \"Goodnight, you.\"",
-  "Clicking the lamp afterwards makes it wink and say \"Just resting my...\" in the same handwriting, so the toggle has a second small reward."
+  "Type: a large high-contrast serif wordmark in brown (#49372E) with DM Sans for the tagline, on a warm yellow wall with a faint repeating wallpaper motif.",
+  "Illustration: the mascot is a smiling lamp standing on a book, with a trailing plant, a glass of chai and a moth, all drawn with a soft inked outline on a wooden shelf that runs off the right edge.",
+  "Handwriting is the lamp's voice: 'Hello, you.' writes itself above the shade, and a 'pull me' note with an arrow points at the cord. The rest of the page stays in serif and sans.",
+  "Interaction: dragging the cord down switches the whole page to night. The wall turns deep purple, a window of moonlight falls across the headline, the lamp closes its eyes with drifting Zs, and the cord's bead glows so it can still be found in the dark.",
+  "A second reward: tapping the sleeping lamp makes it wink and write 'Just resting my...', so the toggle is not the end of the interaction.",
+  "Further down, three serif lines step in from the left one indent at a time, signed off in the same handwriting ('With warmth, ShaluAI') next to a small drawn flower.",
+  "Mobile: the wordmark and tagline come first, and the lamp scene sits below at full width with the greeting, the moth and the 'pull me' hint kept."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Day state with the cord hint and the Hello greeting typing in"
+   "caption": "Day state: 'Hello, you.' above the lamp and the 'pull me' hint pointing at the cord."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "Mid-drag on the cord: the lamp is already dozing and the wall darkens"
+   "caption": "Pulling the cord down: the bead stretches below its resting point, the room switches to night and 'Goodnight' starts writing itself as the lamp falls asleep."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Night state: lamp asleep, Goodnight, you."
+   "caption": "Cord released: night state settled, with 'Goodnight, you.' complete, a moonlit window on the wall and the glowing bead."
   },
   {
    "file": "flow-4.jpg",
-   "caption": "Clicking the sleeping lamp"
+   "caption": "Tapping the sleeping lamp: it opens one eye in a wink and starts writing 'Just resting my...'."
   }
  ],
  "slug": "shalu",

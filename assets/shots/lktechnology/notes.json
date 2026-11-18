@@ -3,30 +3,32 @@
  "url": "https://lktechnology.in",
  "name": "LK Technology",
  "dark": false,
- "tagline": "Software, bots and AI, under a flock of ASCII pigeons.",
- "what": "The landing page of LK Technology, a small software, bots and AI studio. The whole page is one night scene that visitors can poke at.",
+ "tagline": "A night scene drawn in text characters, with pigeons to feed.",
+ "what": "The landing page of LK Technology, a small studio for software, bots and AI.",
  "points": [
-  "The only copy is the name, the line \"Software, bots and AI.\" and a \"Click to scatter seed\" prompt, so the interaction is the pitch.",
-  "Every pigeon, power line, moon and skyline is drawn from text characters, which ties the illustration to the code-first brand.",
-  "Set in IBM Plex Mono throughout, with light grey text (#CDD8DB) on a deep navy ground (#151F29).",
-  "Clicking scatters seed and the pigeons flock down and take off, so the page reads as a small toy before it reads as a company site."
+  "The whole page is one night scene drawn in text characters: a crescent moon built from '#', dashed power lines on a pole, a skyline outlined in box characters with yellow '#' for lit windows, and a large flock of pigeons.",
+  "The pigeons are dense ASCII textures with two touches of colour, a green sheen at the neck and an orange eye, so they read as birds from a distance and as type up close.",
+  "Copy is cut to the name, 'Software, bots and AI.' and one hint, so the interaction does the selling.",
+  "Type: IBM Plex Mono throughout, light grey (#CDD8DB) on deep navy (#151F29). The name is set large and light at the bottom left beside a line-drawn bird logo.",
+  "Interaction: clicking anywhere scatters seed. Specks land along the ground line, the hint disappears and the flock comes down to feed, so the page works as a small toy before it reads as a company site.",
+  "Mobile: the scene is recomposed for a tall screen with fewer, larger birds, and the hint changes from 'Click' to 'Tap to scatter seed' and moves above the name."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Scene at rest, pigeons on the wire and ground"
+   "caption": "Before any click: the flock circles in a loose ring between the wires and the rooftops, five pigeons stand on the ground and 'Click to scatter seed' sits at the bottom right."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "First click drops seed"
+   "caption": "After the first click the hint is gone and a few seed specks have landed beside the pigeons on the ground."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Second click, the flock takes off and lands"
+   "caption": "More clicks spread seed further along the ground, and the ring of flying birds starts to drop towards it."
   },
   {
    "file": "flow-4.jpg",
-   "caption": "Third click, birds mid-flight"
+   "caption": "The flock comes down to feed: birds land with wings raised and crowd the ground line where the seed fell."
   }
  ],
  "shots": [

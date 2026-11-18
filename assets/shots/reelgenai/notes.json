@@ -1,27 +1,29 @@
 {
  "url": "https://reelgenai.com",
  "name": "ReelgenAI",
- "tagline": "Turn a business URL into short-form reels.",
- "what": "ReelgenAI is a marketing tool that reads a business website and generates short vertical video for Instagram, TikTok and Shorts. It is aimed at small business owners who have no video team.",
+ "tagline": "URL-to-reel landing page where the input is the demo.",
+ "what": "A marketing tool that reads a business website and generates short vertical video for Instagram, TikTok and Shorts.",
  "points": [
-  "The hero headline is set in a very heavy sans with \"viral reels\" on a yellow highlighter block, so the one phrase that sells the product is the loudest thing on the page.",
-  "The URL box sits directly under the headline with a yellow Generate button (#FACC15 family) and a four-step progress row (Analysis, Audio Match, Assembly, Reel ready) that shows the pipeline before anything is typed.",
-  "Sample brand chips (CommuterGlasses, FitLife, TechStart) fill the input with an example URL and change the reel in the phone mockups, so a visitor can try the idea without typing anything.",
-  "Palette is warm off-white with near-black stone text and one saturated yellow; the closing band repeats the URL input on a full yellow field with a small film-reel cat mascot.",
-  "Body text uses the system sans stack; there is no dark theme, and the page looks the same under a dark colour scheme."
+  "Headline: a very heavy sans with 'viral reels' set on a yellow highlighter block, so the phrase that sells the product is the loudest thing on the page. A small pill above it names the platforms.",
+  "The URL input sits directly under the headline as one card: a link icon, the field and a yellow Generate button, with a status row underneath (Analysis, Audio Match, Assembly, Reel ready) that shows the pipeline before anything is typed.",
+  "Sample chips (CommuterGlasses, FitLife, TechStart) fill the field with an example URL and swap the clip on the centre phone, so a visitor can try the idea without typing. The selected chip fills black.",
+  "Three phone mockups fan out below the input, the centre one upright and the outer two tilted away. The centre one is styled as a real reel, with story progress bars, a 'Trending Audio' pill, a sponsored caption and a 'Shop Now' button.",
+  "Palette: warm off-white, near-black for text and buttons, and one saturated yellow (#FACC15 family) for the highlight, the Generate button and the closing band. A film-strip border introduces the 'Three steps' section.",
+  "The closing band repeats the URL input on a full yellow field beside a film-reel cat mascot drawn in flat black, with 'No credit card required for trial.' under the button.",
+  "Mobile: the headline re-wraps to three centred lines with the highlight kept, the Generate button stays inside the input card, and the chips still fit on one row."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Typing a URL into the closing call to action input"
+   "caption": "Closing band: typing a URL into the input gives it a thick black focus ring, beside the 'Start Generating Free' button."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "Choosing the FitLife sample chip"
+   "caption": "Back in the hero, choosing the FitLife chip: the chip fills black, the field changes to www.fitlife.com and the centre phone plays a different clip."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Choosing the TechStart sample chip"
+   "caption": "Choosing TechStart: the field reads www.techstart.io, the centre phone switches clip again and its story progress bar moves on a segment."
   }
  ],
  "slug": "reelgenai",

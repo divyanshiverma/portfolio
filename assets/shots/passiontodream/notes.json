@@ -3,24 +3,25 @@
  "url": "https://passiontodream.com",
  "name": "Passion to Dream",
  "dark": false,
- "tagline": "Lisbon consultancy for visas, residency and work placement.",
- "what": "A consultancy based in Lisbon that guides people through NIF, residence renewal, family reunification and work placement in Europe. The site is built for expats and job seekers who want one team to handle the paperwork.",
+ "tagline": "Black-and-gold consultancy site with a serif, editorial voice.",
+ "what": "A Lisbon consultancy that guides people through NIF, residence renewal, family reunification and work placement in Europe.",
  "points": [
-  "A black and gold look: near-black background (#0B0A09), warm cream text (#F1EBDD) and gold gradient buttons with a soft glow.",
-  "Headlines are set in Cormorant Garamond with the second line, \"Meet Careers\", in gold italic, while Manrope handles body text and the small spaced-out gold eyebrow labels.",
-  "A gold infinity-and-feather logo with small birds is reused as the large hero illustration, so the brand mark carries the page.",
-  "A four-item strip under the hero (Office, Remote support, Languages, Fees) states the practical facts in small caps labels and serif values.",
-  "The Jobs nav item opens a dropdown listing Poland and Malta with one-line descriptions; a green WhatsApp button stays fixed in the corner.",
-  "The page is dark in both colour schemes, so no separate dark capture was kept."
+  "Palette: near-black (#0B0A09), warm cream text (#F1EBDD) and gold. Primary buttons use a gold gradient with a soft glow and secondary buttons are outlined, so each block has one obvious next step.",
+  "Type: Cormorant Garamond for headlines, with the second line in gold italic ('Meet Careers', 'Getting help shouldn't be.'), and Manrope for body copy and the small, widely tracked gold eyebrow labels.",
+  "The gold infinity-and-feather logo, with birds lifting off it, is enlarged into the hero illustration. Above the eyebrow the brand name is set again as a faint outlined watermark.",
+  "A four-column strip under the hero (Office, Remote support, Languages, Fees) states the practical facts as small gold labels over serif values.",
+  "'Why Passion to Dream' pairs a serif headline and a two-column checklist with four cards numbered in gold Roman numerals, each answering one worry about moving countries.",
+  "The Jobs nav item opens a dropdown card with Poland and Malta, each a serif name over a one-line list of job types. A green WhatsApp button stays fixed in the corner, the one colour outside the palette, so it is always easy to find.",
+  "Mobile: the nav collapses to a round gold-outlined menu button, the two hero buttons stack, and the watermark and logo illustration scale down with the column."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "Job consultancy call to action and footer"
+   "caption": "Near the end of the page: the 'Job consultancy' card with a thin gold border and a single 'Apply To Work' button, then the footer with the logo lock-up, a second gold button and the link columns."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Jobs dropdown open with Poland and Malta"
+   "caption": "Jobs dropdown open: Poland and Malta in a dark card under the nav, each with its job types. The chevron next to Jobs flips to point up."
   }
  ],
  "shots": [

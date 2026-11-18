@@ -3,27 +3,29 @@
  "url": "https://fluentmint.com",
  "name": "FluentMint",
  "dark": false,
- "tagline": "A software income stream for course creators and educators.",
- "what": "A partnership offer where FluentMint builds, hosts and supports software for educators and the educator keeps 50% of every sale. It targets course creators in fields such as tax, bookkeeping, podcasting and therapy.",
+ "tagline": "Partnership offer page where the deal reads as a small table.",
+ "what": "A partnership offer: FluentMint builds, hosts and supports software for educators, and the educator keeps 50% of every sale.",
  "points": [
-  "A pale mint hero (a light green wash) with a dark teal headline (#0B3F47) in Manrope and body copy in Source Sans 3 (#3B4A52).",
-  "The hero pairs the headline with a \"The partnership\" card split into You bring, We bring and You keep rows, so the deal is readable at a glance.",
-  "Audience pages are linked as a list of educator types (Tax, Bookkeeping, Podcast, Legal, Therapist, Speech therapy), each with a one-line pitch.",
-  "The FAQ is an accordion of eight questions with plus and minus markers; several can stay open at once.",
-  "A small team section shows three named people with round photos and their roles, and a WhatsApp button sits in the corner."
+  "Hero: a pale mint band with a dark teal (#0B3F47) headline in Manrope and body copy in Source Sans 3 (#3B4A52). The terms of the offer are bolded inside the paragraph, so a quick skim still catches them.",
+  "'The partnership' card sits beside the headline as a small two-column table: green labels on the left (You bring, We bring, You keep), plain answers on the right, split by hairlines. The whole deal reads at a glance.",
+  "Buttons: a filled teal 'Become a partner' and an outlined 'See how it works', with one small line underneath that answers the cost question before anyone asks it.",
+  "Examples section: each educator's product is a row with the product name, the person and a green field-and-country tag on the left, and the same labelled lines on the right for every row (Audience, Built, Why it works), so the rows are easy to compare.",
+  "A team row shows round photos with names and roles in green, placed just before the FAQ.",
+  "FAQ: a large heading on the left and an accordion on the right with plus and minus markers. Several answers can stay open at once, and the question opened last turns green.",
+  "Mobile: the nav collapses to a menu button, both buttons stack at full width, and the partnership card drops below the copy. A WhatsApp button stays fixed in the corner throughout."
  ],
  "flow": [
   {
    "file": "flow-1.jpg",
-   "caption": "FAQ section with the first question open"
+   "caption": "The FAQ with every question closed, each row a question and a plus marker."
   },
   {
    "file": "flow-2.jpg",
-   "caption": "First answer open, second question below"
+   "caption": "Opening 'Who is FluentMint for?': the answer expands below, the marker turns to a minus and the question turns green."
   },
   {
    "file": "flow-3.jpg",
-   "caption": "Another question opened, with the earlier one still open"
+   "caption": "Opening 'How do I earn, and what is the split?' as well: both answers stay open, and the green moves to the newer question."
   }
  ],
  "shots": [
