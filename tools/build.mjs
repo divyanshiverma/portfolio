@@ -84,6 +84,7 @@ const head = (title, desc, pre) => `<!doctype html>
 <meta name="description" content="${esc(desc)}">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="${pre}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="${pre}assets/apple-touch-icon.png">
 ${FONTS}
 <link rel="stylesheet" href="${pre}assets/css/site.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -124,7 +125,7 @@ const hero = `<section class="hx" aria-labelledby="h-hx">
     <h1 id="h-hx" class="hx-name">Divyanshi <span>Verma</span></h1>
   </div>
   <div class="hx-copy">
-    <p class="hx-lede">I design websites people use and remember. ${reel.length} of them are live right now, from an Indian calorie app to linen kurtas for European summers.</p>
+    <p class="hx-lede">I design websites people use and remember. ${reel.length} of them are live right now, from a photo restoration app to linen kurtas for European summers.</p>
     <div class="hx-cta"><a class="btn" href="#work">See the work</a><a class="btn ghost" href="mailto:divyanshi.verma18@gmail.com">Email me</a></div>
   </div>
   <div class="hx-stage">
