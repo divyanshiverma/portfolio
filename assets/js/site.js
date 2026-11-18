@@ -17,8 +17,8 @@
   var hx = document.querySelector('.hx');
   if (!hx) return;
   var links = hx.querySelectorAll('.hx-list a');
-  var shots = hx.querySelectorAll('.hx-shots img');
-  var phones = hx.querySelectorAll('.hx-phone img');
+  var shots = hx.querySelectorAll('.hx-laptop .lt-screen img');
+  var phones = hx.querySelectorAll('.hx-phone .ip-screen img');
   var url = hx.querySelector('.hx-url');
   var cur = 0, timer = null, held = false, seen = true;
   function show(i) {

@@ -35,6 +35,11 @@ const img = (rel, alt, prefix = '', cls = '', eager = false) => {
   return `<img src="${prefix}${rel}" alt="${esc(alt)}"${d ? ` width="${d[0]}" height="${d[1]}"` : ''}${eager ? '' : ' loading="lazy"'} decoding="async"${cls ? ` class="${cls}"` : ''}>`;
 };
 
+// Device frames. The screen box has the screenshot's own aspect ratio, so the
+// image is never cropped. `inner` replaces the single image (the hero stacks several).
+const laptop = (src, alt, pre = '', cls = '', eager = false, inner = null) => (src || inner) ? `<div class="laptop${cls ? ` ${cls}` : ''}"><div class="lt-lid"><div class="lt-screen">${inner ?? img(src, alt, pre, '', eager)}</div></div><div class="lt-base"></div></div>` : '';
+const phone = (src, alt, pre = '', cls = '', eager = false, inner = null) => (src || inner) ? `<div class="iphone${cls ? ` ${cls}` : ''}"><div class="ip-body"><span class="ip-btn" aria-hidden="true"></span><div class="ip-screen">${inner ?? img(src, alt, pre, '', eager)}</div><span class="ip-island" aria-hidden="true"></span></div></div>` : '';
+
 const ORDER = [
   ['kyakhaya', 'Kya Khaya', 'https://kyakhaya.com', 'Indian food calorie app: snap your plate, get calories and macros.'],
   ['ricezero', 'RiceZero', 'https://ricezero.com', 'Shirataki rice brand at 9 kcal per 100 g.'],
@@ -123,15 +128,13 @@ const hero = `<section class="hx" aria-labelledby="h-hx">
     <div class="hx-cta"><a class="btn" href="#work">See the work</a><a class="btn ghost" href="mailto:divyanshi.verma18@gmail.com">Email me</a></div>
   </div>
   <div class="hx-stage">
-    <div class="hx-screen">
-      <div class="hx-bar" aria-hidden="true"><i></i><i></i><i></i><span class="hx-url">${esc(host(reel[0].url))}</span></div>
-      <div class="hx-shots">
+    ${laptop(null, '', '', 'hx-laptop', false, `
 ${reel.map((p, i) => `        ${img(p.dl, `${p.name} home page on desktop`, '', i ? '' : 'on', i < 2)}`).join('\n')}
-      </div>
-    </div>
-    <div class="hx-phone" aria-hidden="true">
-${reel.filter((p) => p.ml).map((p, i) => `      ${img(p.ml, '', '', i ? '' : 'on', i < 2)}`).join('\n')}
-    </div>
+      `)}
+    ${phone(null, '', '', 'hx-phone', false, `
+${reel.filter((p) => p.ml).map((p, i) => `        ${img(p.ml, '', '', i ? '' : 'on', i < 2)}`).join('\n')}
+      `)}
+    <p class="hx-url" aria-live="polite">${esc(host(reel[0].url))}</p>
   </div>
   <div class="hx-index">
     <p class="hx-label">Live work</p>
@@ -149,8 +152,8 @@ ${hero}
   <div class="lead">
 ${lead.map((p, i) => `    <a class="lead-item" href="work/${p.slug}.html">
       <div class="lead-media">
-        <div class="desk rv">${p.dl ? img(p.dl, `${p.name} home page on desktop`) : ''}</div>
-        ${p.ml ? `<div class="phone">${img(p.ml, `${p.name} on a phone`)}</div>` : ''}
+        ${laptop(p.dl, `${p.name} home page on desktop`, '', 'rv')}
+        ${phone(p.ml, `${p.name} on a phone`, '', 'lead-phone')}
       </div>
       <div class="lead-text">
         <span class="rank">${new URL(p.url).hostname.replace(/^www\./, '')}</span>
@@ -166,7 +169,7 @@ ${lead.map((p, i) => `    <a class="lead-item" href="work/${p.slug}.html">
   <div class="sec-head"><h2 id="h-more">More live sites</h2><p>Brands, AI tools and personal sites. Every one has its own page.</p></div>
   <div class="grid">
 ${more.map((p) => `    <a class="card" href="work/${p.slug}.html">
-      <div class="thumb">${(p.dl || p.ml) ? img(p.dl || p.ml, `${p.name} home page`) : ''}</div>
+      <div class="thumb-device">${p.dl ? laptop(p.dl, `${p.name} home page`) : phone(p.ml, `${p.name} home page`)}</div>
       <h3>${esc(p.name)}</h3>
       <p>${esc(p.tagline)}</p>
     </a>`).join('\n')}
@@ -216,13 +219,13 @@ workList.forEach((p, i) => {
   const blocks = [];
   if (p.dd && p.dl) {
     blocks.push(`<section class="block" aria-labelledby="h-th"><h2 id="h-th">Light and dark, desktop</h2><div class="pair">
-<figure>${img(p.dl, `${p.name} desktop, light theme`, pre)}<figcaption>Light</figcaption></figure>
-<figure>${img(p.dd, `${p.name} desktop, dark theme`, pre)}<figcaption>Dark</figcaption></figure></div></section>`);
+<figure>${laptop(p.dl, `${p.name} desktop, light theme`, pre)}<figcaption>Light</figcaption></figure>
+<figure>${laptop(p.dd, `${p.name} desktop, dark theme`, pre)}<figcaption>Dark</figcaption></figure></div></section>`);
   }
   const phones = [p.ml && [p.ml, 'Phone, light'], p.md && [p.md, 'Phone, dark']].filter(Boolean);
   if (phones.length) {
     blocks.push(`<section class="block" aria-labelledby="h-ph"><h2 id="h-ph">On a phone</h2><div class="phones">
-${phones.map(([s, c]) => `<figure><div class="frame">${img(s, `${p.name}, ${c.toLowerCase()} theme at 390 px`, pre)}</div><figcaption>${c}</figcaption></figure>`).join('\n')}
+${phones.map(([s, c]) => `<figure>${phone(s, `${p.name}, ${c.toLowerCase()} theme at 390 px`, pre)}<figcaption>${c}</figcaption></figure>`).join('\n')}
 </div>${p.dark === false ? `<p class="note">${esc(p.name)} has a single theme, so there is one set of captures.</p>` : ''}</section>`);
   }
   if (p.flow.length) {
@@ -244,7 +247,7 @@ ${p.points.map((t) => `<li>${esc(t)}</li>`).join('\n')}
   <div><h1>${esc(p.name)}</h1><p class="tag">${esc(p.tagline)}</p></div>
   <div>${p.what ? `<p class="what">${esc(p.what)}</p>` : ''}<a class="live" href="${esc(p.url)}" rel="noopener">Visit ${esc(host)}</a></div>
 </header>
-${p.dl ? `<div class="p-hero">${img(p.dl, `${p.name} home page on desktop`, pre, '', true)}</div>` : ''}
+${p.dl ? `<div class="p-hero">${laptop(p.dl, `${p.name} home page on desktop`, pre, '', true)}${phone(p.ml, `${p.name} on a phone`, pre, 'p-hero-phone', true)}</div>` : ''}
 ${blocks.join('\n')}
 </article>
 <nav class="pager" aria-label="More projects">
