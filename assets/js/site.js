@@ -18,7 +18,7 @@
   if (!hx) return;
   var links = hx.querySelectorAll('.hx-list a');
   var shots = hx.querySelectorAll('.hx-laptop .lt-screen img');
-  var phones = hx.querySelectorAll('.hx-phone .ip-screen img');
+  var phones = hx.querySelectorAll('.hx-phone .mock-stack img');
   var url = hx.querySelector('.hx-url');
   var cur = 0, timer = null, held = false, seen = true;
   function show(i) {

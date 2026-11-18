@@ -86,10 +86,10 @@ a { color: inherit; }
 .hx-list a.on::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--marker); margin-left: auto; align-self: center; }
 
 .hx-stage { grid-area: stage; position: relative; margin: 8px 0 0 7%; }
-.hx-laptop .lt-screen img, .hx-phone .ip-screen img { position: absolute; inset: 0; opacity: 0;
+.hx-laptop .lt-screen img, .hx-phone .mock-stack img { position: absolute; inset: 0; opacity: 0;
 }
-.hx-laptop .lt-screen img, .hx-phone .ip-screen img { transition: opacity .7s ease, transform 6s ease; }
-.hx-laptop .lt-screen img.on, .hx-phone .ip-screen img.on { opacity: 1; }
+.hx-laptop .lt-screen img, .hx-phone .mock-stack img { transition: opacity .7s ease, transform 6s ease; }
+.hx-laptop .lt-screen img.on, .hx-phone .mock-stack img.on { opacity: 1; }
 .hx-laptop .lt-screen img.on { transform: scale(1.02); }
 .hx-phone { position: absolute; left: -8%; bottom: 4%; width: 23%; }
 .hx-url { margin: 18px 0 0; text-align: center; font-size: 14px; color: var(--ink-2); letter-spacing: .02em; }
@@ -236,14 +236,12 @@ figcaption { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
 .lt-base { position: relative; width: 110%; margin-left: -5%; height: 2.6cqw; background: linear-gradient(var(--metal-1), var(--metal-2) 50%, var(--metal-3)); border-radius: .2cqw .2cqw 2cqw 2cqw / .2cqw .2cqw 2.4cqw 2.4cqw; box-shadow: inset 0 .15cqw 0 rgba(255, 255, 255, .35); }
 .lt-base::before { content: ""; position: absolute; top: 0; left: 50%; width: 14cqw; height: .85cqw; margin-left: -7cqw; border-radius: 0 0 1cqw 1cqw; background: var(--metal-3); opacity: .55; }
 
-.iphone { container-type: inline-size; filter: drop-shadow(0 16px 24px rgba(15, 17, 20, .26)); }
-.ip-body { position: relative; padding: 2.9cqw; background: #000; border-radius: 15.5cqw; box-shadow: inset 0 0 0 .55cqw #4a4d53, 0 0 0 .45cqw var(--metal-edge); }
-.ip-screen { position: relative; aspect-ratio: 390 / 844; overflow: hidden; border-radius: 12.8cqw; background: #000; }
-.ip-island { position: absolute; top: 5.3cqw; left: 50%; width: 25cqw; height: 7.2cqw; margin-left: -12.5cqw; border-radius: 4cqw; background: #000; z-index: 2; }
-.ip-btn { position: absolute; right: -.95cqw; top: 29cqw; width: .7cqw; height: 16cqw; border-radius: 0 .4cqw .4cqw 0; background: var(--metal-edge); }
-.ip-btn::before { content: ""; position: absolute; left: calc(-100cqw - 1.2cqw); top: -5cqw; width: .7cqw; height: 10cqw; border-radius: .4cqw 0 0 .4cqw; background: var(--metal-edge); box-shadow: 0 13cqw 0 var(--metal-edge); }
+.mock-phone { filter: drop-shadow(0 18px 24px rgba(15, 17, 20, .25)); }
+.mock-phone img { display: block; width: 100%; height: auto; }
+.mock-stack { position: relative; aspect-ratio: 888 / 1768; }
+.mock-stack img { height: 100%; }
 
-.lt-screen img, .ip-screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.lt-screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
 /* phones: keep the laptop base inside the page gutter */
 @media (max-width: 520px) {

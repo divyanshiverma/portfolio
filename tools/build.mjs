@@ -38,7 +38,17 @@ const img = (rel, alt, prefix = '', cls = '', eager = false) => {
 // Device frames. The screen box has the screenshot's own aspect ratio, so the
 // image is never cropped. `inner` replaces the single image (the hero stacks several).
 const laptop = (src, alt, pre = '', cls = '', eager = false, inner = null) => (src || inner) ? `<div class="laptop${cls ? ` ${cls}` : ''}"><div class="lt-lid"><div class="lt-screen">${inner ?? img(src, alt, pre, '', eager)}</div></div><div class="lt-base"></div></div>` : '';
-const phone = (src, alt, pre = '', cls = '', eager = false, inner = null) => (src || inner) ? `<div class="iphone${cls ? ` ${cls}` : ''}"><div class="ip-body"><span class="ip-btn" aria-hidden="true"></span><div class="ip-screen">${inner ?? img(src, alt, pre, '', eager)}</div><span class="ip-island" aria-hidden="true"></span></div></div>` : '';
+// Phones are pre-rendered mockups (real iPhone 14 Pro frame from devices.css,
+// MIT) made by tools/mockups.mjs from each mobile-light screenshot.
+const mockOf = (src) => {
+  const m = /assets\/shots\/([^/]+)\/mobile-light\.webp$/.exec(src || '');
+  return m && has(`assets/mockups/${m[1]}-phone.webp`) ? `assets/mockups/${m[1]}-phone.webp` : null;
+};
+const phone = (src, alt, pre = '', cls = '', eager = false, inner = null) => {
+  if (inner) return `<div class="mock-phone${cls ? ` ${cls}` : ''}"><div class="mock-stack">${inner}</div></div>`;
+  const m = mockOf(src);
+  return m ? `<div class="mock-phone${cls ? ` ${cls}` : ''}">${img(m, alt, pre, '', eager)}</div>` : '';
+};
 
 const ORDER = [
   ['fadedtofresh', 'Faded to Fresh', 'https://fadedtofresh.shalu.ai/app/', 'Restore and colourise old photos in the browser.'],
@@ -133,7 +143,7 @@ const hero = `<section class="hx" aria-labelledby="h-hx">
 ${reel.map((p, i) => `        ${img(p.dl, `${p.name} home page on desktop`, '', i ? '' : 'on', i < 2)}`).join('\n')}
       `)}
     ${phone(null, '', '', 'hx-phone', false, `
-${reel.filter((p) => p.ml).map((p, i) => `        ${img(p.ml, '', '', i ? '' : 'on', i < 2)}`).join('\n')}
+${reel.filter((p) => mockOf(p.ml)).map((p, i) => `        ${img(mockOf(p.ml), '', '', i ? '' : 'on', i < 2)}`).join('\n')}
       `)}
     <p class="hx-url" aria-live="polite">${esc(host(reel[0].url))}</p>
   </div>
