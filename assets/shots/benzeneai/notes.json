@@ -1,0 +1,42 @@
+{
+ "slug": "benzeneai",
+ "url": "https://benzeneai.com",
+ "name": "Benzene",
+ "dark": false,
+ "tagline": "Small models. Stable bonds.",
+ "what": "The site of Benzene, an independent AI lab. It presents itself like a page from a chemistry journal.",
+ "points": [
+  "A scientific-figure look: a labelled benzene ring with \"Fig. 1, benzene C6H6\", a 1.39 angstrom bond dimension and a pi-cloud callout inside a dotted compass circle.",
+  "Libre Caslon Display for the huge \"Benzene\" wordmark and Libre Caslon Text for captions, in ink blue (#243E52) on pale blue-grey.",
+  "The ring can be dragged to turn it in 3D, with the hint \"Drag to turn\" in italic beside the control.",
+  "\"Fuse a ring\" adds a ring and relabels the figure (Fig. 3, phenanthrene C14H10), so the one control shows the brand idea of stable bonds.",
+  "Corner crop marks and a single email link keep the page quiet."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Benzene at rest, Fig. 1"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "Dragging the ring to turn it"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Fuse a ring, a second ring joins"
+  },
+  {
+   "file": "flow-4.jpg",
+   "caption": "Fused again, Fig. 3 phenanthrene"
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "flow-4.jpg",
+  "mobile-light.jpg"
+ ]
+}

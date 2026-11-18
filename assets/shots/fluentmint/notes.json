@@ -1,0 +1,37 @@
+{
+ "slug": "fluentmint",
+ "url": "https://fluentmint.com",
+ "name": "FluentMint",
+ "dark": false,
+ "tagline": "A software income stream for course creators and educators.",
+ "what": "A partnership offer where FluentMint builds, hosts and supports software for educators and the educator keeps 50% of every sale. It targets course creators in fields such as tax, bookkeeping, podcasting and therapy.",
+ "points": [
+  "A pale mint hero (a light green wash) with a dark teal headline (#0B3F47) in Manrope and body copy in Source Sans 3 (#3B4A52).",
+  "The hero pairs the headline with a \"The partnership\" card split into You bring, We bring and You keep rows, so the deal is readable at a glance.",
+  "Audience pages are linked as a list of educator types (Tax, Bookkeeping, Podcast, Legal, Therapist, Speech therapy), each with a one-line pitch.",
+  "The FAQ is an accordion of eight questions with plus and minus markers; several can stay open at once.",
+  "A small team section shows three named people with round photos and their roles, and a WhatsApp button sits in the corner."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "FAQ section with the first question open"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "First answer open, second question below"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Another question opened, with the earlier one still open"
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "mobile-light.jpg"
+ ]
+}

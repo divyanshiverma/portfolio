@@ -1,0 +1,39 @@
+{
+ "slug": "forgetthetools",
+ "url": "https://forgetthetools.com",
+ "name": "forgetthetools",
+ "dark": true,
+ "tagline": "Price-anchored landing page for a $99 research service.",
+ "what": "A $99-a-month service that sends marketing research reports on ads, Google search, ChatGPT recommendations and creators to Shopify founders and DTC brands.",
+ "points": [
+  "The hero is built around a price anchor: a white card of tool rows, each with its logo, its job and a red struck-through monthly price, ending in a dark green 'Research done for you $99' bar. The rows sit at slight angles, like a pile of receipts.",
+  "Colour: a chartreuse (#D2E823) hero with deep green (#254F1A) headlines in a very heavy Schibsted Grotesk, and near-black (#1E2330) for the nav button. Every section after it changes background, so the page reads as distinct blocks while scrolling.",
+  "Pill tags above the headline name the audience and the offer before the headline does: 'For Shopify founders', 'For DTC brands' and '$1,306 of tools for $99'.",
+  "A dark green ticker under the hero scrolls tool logos with struck-through prices, repeating the anchor at the fold.",
+  "Service table: columns for 'What you want', 'What you get' and 'Tools you skip'. Each row leads with a plain outcome in heavy type, gives one concrete example in the middle, and ends with the logos and price it replaces. Four rows show at first, behind a 'Show more' toggle, followed by 'All ten for $99 a month.' and the CTA.",
+  "Pricing section: a maroon block with a pink '$1,306 a month for apps. 44% of a $3K store.' headline beside an itemised bill of eleven tools. Two cards below set a card statement (-$1,306, in red) against monthly orders (+$2,940, in green).",
+  "Navigation: a floating white pill nav with dropdowns and a theme switch next to the dark CTA. On mobile it collapses to a 'Menu' pill, the hero stacks into one column and the CTA goes full width."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "The service table with four rows visible and the 'Show more' control, followed by 'All ten for $99 a month.' and the CTA."
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "After Show more: further rows open in place (social content, conversion, best-sellers, rival changes), each with its tool logos and struck-through price."
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Scrolling on into the maroon pricing section: the itemised $1,306 tool bill and the card statement set against orders."
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "mobile-light.jpg"
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "slug": "divyanshiverma",
+ "url": "https://divyanshiverma.com",
+ "name": "Divyanshi Verma",
+ "dark": true,
+ "tagline": "A personal site shaped like an open notebook.",
+ "what": "The personal site of Divyanshi Verma, collecting marketing and design projects and blog posts. It is for people who want to see her work and writing.",
+ "points": [
+  "The whole site is an open paper notebook with a vine as the spine, a taped photo, a red ribbon bookmark and coloured side tabs for Marketing, Design, Blog and About.",
+  "The home page doubles as a numbered index table with project counts and \"go to section\" links.",
+  "Fraunces for the headings, Work Sans for body text, and a handwritten script in the footer, on an off-white (#FAFAFA) dotted page.",
+  "A day, night and whimsy switch in the header changes the whole theme.",
+  "Small hand-drawn doodles (flask, cloud, moon) sit around the book."
+ ],
+ "flow": [],
+ "shots": [
+  "desktop-dark.jpg",
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "mobile-dark.jpg",
+  "mobile-light.jpg",
+  "section-about.jpg",
+  "section-blog.jpg",
+  "section-design.jpg",
+  "section-marketing.jpg"
+ ]
+}

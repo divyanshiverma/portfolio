@@ -1,0 +1,41 @@
+{
+ "slug": "lktechnology",
+ "url": "https://lktechnology.in",
+ "name": "LK Technology",
+ "dark": false,
+ "tagline": "Software, bots and AI, under a flock of ASCII pigeons.",
+ "what": "The landing page of LK Technology, a small software, bots and AI studio. The whole page is one night scene that visitors can poke at.",
+ "points": [
+  "The only copy is the name, the line \"Software, bots and AI.\" and a \"Click to scatter seed\" prompt, so the interaction is the pitch.",
+  "Every pigeon, power line, moon and skyline is drawn from text characters, which ties the illustration to the code-first brand.",
+  "Set in IBM Plex Mono throughout, with light grey text (#CDD8DB) on a deep navy ground (#151F29).",
+  "Clicking scatters seed and the pigeons flock down and take off, so the page reads as a small toy before it reads as a company site."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Scene at rest, pigeons on the wire and ground"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "First click drops seed"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Second click, the flock takes off and lands"
+  },
+  {
+   "file": "flow-4.jpg",
+   "caption": "Third click, birds mid-flight"
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "flow-4.jpg",
+  "mobile-light.jpg"
+ ]
+}

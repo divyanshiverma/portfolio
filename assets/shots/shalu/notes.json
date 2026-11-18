@@ -1,0 +1,42 @@
+{
+ "url": "https://shalu.ai",
+ "name": "ShaluAI",
+ "tagline": "Friendly AI for everyday life.",
+ "what": "ShaluAI is a landing page for a friendly everyday AI, told through a lamp on a shelf rather than a product screenshot. It invites visitors to say hello instead of selling features.",
+ "points": [
+  "A large high-contrast serif wordmark in brown (#49372E) on a warm yellow wall with a faint patterned wallpaper, paired with DM Sans for the tagline.",
+  "The mascot is a smiling lamp on a book with a plant and a cup of chai, drawn with a hand-inked outline.",
+  "A handwritten \"Hello\" types itself out beside the lamp, and a small arrow points at the pull cord.",
+  "Pulling the cord (drag it down) turns the page into night: the wall goes deep purple, a window shadow appears, the lamp sleeps with Zs and says \"Goodnight, you.\"",
+  "Clicking the lamp afterwards makes it wink and say \"Just resting my...\" in the same handwriting, so the toggle has a second small reward."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Day state with the cord hint and the Hello greeting typing in"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "Mid-drag on the cord: the lamp is already dozing and the wall darkens"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Night state: lamp asleep, Goodnight, you."
+  },
+  {
+   "file": "flow-4.jpg",
+   "caption": "Clicking the sleeping lamp"
+  }
+ ],
+ "slug": "shalu",
+ "dark": false,
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "flow-4.jpg",
+  "mobile-light.jpg"
+ ]
+}

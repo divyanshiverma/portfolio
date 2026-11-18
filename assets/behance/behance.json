@@ -1,0 +1,59 @@
+[
+ {
+  "slug": "HIIT-Fire-Assist-UXUI",
+  "title": "HIIT Fire Assist UX/UI",
+  "url": "https://www.behance.net/gallery/213653169/HIIT-Fire-Assist-UXUI",
+  "cover": "assets/behance/HIIT-Fire-Assist-UXUI/cover.jpg",
+  "images": [
+   "assets/behance/HIIT-Fire-Assist-UXUI/01.jpg",
+   "assets/behance/HIIT-Fire-Assist-UXUI/02.jpg",
+   "assets/behance/HIIT-Fire-Assist-UXUI/03.jpg",
+   "assets/behance/HIIT-Fire-Assist-UXUI/04.jpg",
+   "assets/behance/HIIT-Fire-Assist-UXUI/05.jpg",
+   "assets/behance/HIIT-Fire-Assist-UXUI/06.jpg"
+  ],
+  "fields": [
+   "UX Case Study",
+   "Watch App Design"
+  ],
+  "summary": "A UX case study for a smartwatch workout app aimed at hands-free, low-attention use during exercise. The write-up moves from product user challenges and a user persona to task mapping and the final round-watch screens, such as mode selection and a session summary showing calories, time and heart rate."
+ },
+ {
+  "slug": "YouTube-Music-UXUI-Redesign-Case-Study",
+  "title": "YouTube Music UX/UI Redesign Case Study",
+  "url": "https://www.behance.net/gallery/209372493/YouTube-Music-UXUI-Redesign-Case-Study",
+  "cover": "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/cover.jpg",
+  "images": [
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/01.jpg",
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/02.jpg",
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/03.jpg",
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/04.jpg",
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/05.jpg",
+   "assets/behance/YouTube-Music-UXUI-Redesign-Case-Study/06.jpg"
+  ],
+  "fields": [
+   "UX Case Study",
+   "App Redesign"
+  ],
+  "summary": "A redesign case study of the YouTube Music app. It is organised as numbered problems, each paired with a proposed solution shown on dark-theme mobile screens, such as dynamic lyrics, a reworked bottom navigation and moving the radio option out of the queue, plus a redesigned downloads screen."
+ },
+ {
+  "slug": "Spotify-UXUI-Redesign-Case-Study",
+  "title": "Spotify UX/UI Redesign Case Study",
+  "url": "https://www.behance.net/gallery/208571275/Spotify-UXUI-Redesign-Case-Study",
+  "cover": "assets/behance/Spotify-UXUI-Redesign-Case-Study/cover.jpg",
+  "images": [
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/01.jpg",
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/02.jpg",
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/03.jpg",
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/04.jpg",
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/05.jpg",
+   "assets/behance/Spotify-UXUI-Redesign-Case-Study/06.jpg"
+  ],
+  "fields": [
+   "UX Case Study",
+   "App Redesign"
+  ],
+  "summary": "A redesign case study of Spotify across desktop and mobile. Each numbered problem is followed by a solution mock-up in the dark interface, including bulk selection of songs, tabbed artist discographies and a simpler now-playing action bar."
+ }
+]

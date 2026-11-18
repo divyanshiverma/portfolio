@@ -1,0 +1,20 @@
+{
+ "slug": "casualkurta", "url": "https://casualkurta.com", "name": "casual kurta", "dark": false,
+ "tagline": "Illustrated kurta storefront with a live colour picker.",
+ "what": "A single-page storefront for a small label selling linen and hemp kurtas for men and women, from €79. Orders go by email, so the page is built to get a visitor to pick a cut and write in.",
+ "points": [
+  "Type: 'Room to breathe.' is set large in Libre Caslon Text in deep navy (#253E50), with Lato for body copy, on a warm oat background (#EEE9DD). The serif carries the brand; Lato keeps the nav and prices plain.",
+  "The garments are illustrations, not photos. Two kurtas hang from a wooden rail on wire hangers, drawn with stitched hems, placket buttons, a patch pocket and a woven texture. The women's kurta has an all-over block-print motif.",
+  "Colour picker: four swatches under the rail (oat, flax, indigo, madder) recolour the men's kurta, and the label beside them updates, for example 'In madder'. The selected swatch gets a ring. The printed kurta stays as it is, so there is always a fixed piece next to the one that changes.",
+  "A small serif note, 'a looser kind of day', with a hand-drawn arrow points at the rail, a quiet aside next to the large headline.",
+  "The cloth section switches to a full navy band. Linen and hemp are drawn as frayed-edge swatches in the same block print, each under a brass hoop that magnifies the weave: open and fine for linen, coarser for hemp.",
+  "Hierarchy: one solid navy button, 'Find your cut', with 'For men & women. From €79.' under it. 'Order by email' closes the nav with an arrow, because email is the only way to buy.",
+  "Mobile: the nav drops to 'The cuts' and 'Order by email', the headline keeps its scale, and the rail runs edge to edge below the button with the note moved under the men's kurta."
+ ],
+ "flow": [
+  {"file":"flow-1.jpg","caption":"From the default oat, tapping the flax swatch turns the men's kurta a golden flax. The swatch gets a ring and the label reads 'In flax'."},
+  {"file":"flow-2.jpg","caption":"Indigo selected: the men's kurta now matches the printed kurta beside it, and the label reads 'In indigo'."},
+  {"file":"flow-3.jpg","caption":"Madder selected: the kurta turns brick red with pale stitching, and the label reads 'In madder'."}
+ ],
+ "shots": ["desktop-light.jpg","desktop-long.jpg","mobile-light.jpg","flow-1.jpg","flow-2.jpg","flow-3.jpg"]
+}

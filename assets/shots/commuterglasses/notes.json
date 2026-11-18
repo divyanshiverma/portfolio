@@ -1,0 +1,32 @@
+{
+ "slug": "commuterglasses",
+ "url": "https://commuterglasses.com",
+ "name": "Commuter",
+ "dark": false,
+ "tagline": "Sunglasses that show your book.",
+ "what": "A pre-launch page for sunglasses that float an ebook in front of your eye. The goal is a $1 reservation that holds a pair at 20% off.",
+ "points": [
+  "Full-bleed dark photo of a Kindle next to a glowing green projected page, so the product is shown before it is explained.",
+  "Archivo set very large and white over the photo, with a spaced-out wordmark and a plain nav of Features, FAQ and Reserve.",
+  "One conversion action repeated: \"Reserve for $1\" in the hero, in the nav, in the feature stories and at the foot, with a waitlist email field as the fallback.",
+  "The $1 reservation opens a Stripe checkout for \"Commuter Glasses Early Bird Reservation\", so the deposit is small and the payment step is familiar.",
+  "The page has no dark mode, only the photo-led dark hero."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Hero with the Reserve for $1 button"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "Stripe checkout for the $1 early bird reservation (not paid)"
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "mobile-light.jpg"
+ ]
+}

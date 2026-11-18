@@ -1,0 +1,33 @@
+{
+ "slug": "typescriptnotebook",
+ "url": "https://typescriptnotebook.com",
+ "name": "TypeScript Notebook",
+ "dark": false,
+ "tagline": "Run TypeScript in the browser.",
+ "what": "A notebook for writing and running TypeScript cells in the browser. It is for trying code quickly without setting up a project.",
+ "points": [
+  "Opens straight into a working notebook with a sample cell, no landing page in front of it.",
+  "Dark editor-style UI in Inter, with a simple toolbar: New notebook, Import, Download, Run All, Add code, Add markdown.",
+  "Cells carry execution counters like [1] and markdown cells are marked [M], echoing Jupyter.",
+  "Output appears directly under the cell, including npm install logs and printed JSON, so the result sits next to the code.",
+  "A yellow banner asks visitors to sign in to save, and a blue Sign in button sits top right."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Sample cell before running"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "A later run, npm install log and the fetched JSON in the output"
+  }
+ ],
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "mobile-light.jpg"
+ ]
+}

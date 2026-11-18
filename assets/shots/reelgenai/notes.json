@@ -1,0 +1,37 @@
+{
+ "url": "https://reelgenai.com",
+ "name": "ReelgenAI",
+ "tagline": "Turn a business URL into short-form reels.",
+ "what": "ReelgenAI is a marketing tool that reads a business website and generates short vertical video for Instagram, TikTok and Shorts. It is aimed at small business owners who have no video team.",
+ "points": [
+  "The hero headline is set in a very heavy sans with \"viral reels\" on a yellow highlighter block, so the one phrase that sells the product is the loudest thing on the page.",
+  "The URL box sits directly under the headline with a yellow Generate button (#FACC15 family) and a four-step progress row (Analysis, Audio Match, Assembly, Reel ready) that shows the pipeline before anything is typed.",
+  "Sample brand chips (CommuterGlasses, FitLife, TechStart) fill the input with an example URL and change the reel in the phone mockups, so a visitor can try the idea without typing anything.",
+  "Palette is warm off-white with near-black stone text and one saturated yellow; the closing band repeats the URL input on a full yellow field with a small film-reel cat mascot.",
+  "Body text uses the system sans stack; there is no dark theme, and the page looks the same under a dark colour scheme."
+ ],
+ "flow": [
+  {
+   "file": "flow-1.jpg",
+   "caption": "Typing a URL into the closing call to action input"
+  },
+  {
+   "file": "flow-2.jpg",
+   "caption": "Choosing the FitLife sample chip"
+  },
+  {
+   "file": "flow-3.jpg",
+   "caption": "Choosing the TechStart sample chip"
+  }
+ ],
+ "slug": "reelgenai",
+ "dark": false,
+ "shots": [
+  "desktop-light.jpg",
+  "desktop-long.jpg",
+  "flow-1.jpg",
+  "flow-2.jpg",
+  "flow-3.jpg",
+  "mobile-light.jpg"
+ ]
+}
