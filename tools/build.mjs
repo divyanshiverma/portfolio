@@ -41,23 +41,23 @@ const laptop = (src, alt, pre = '', cls = '', eager = false, inner = null) => (s
 const phone = (src, alt, pre = '', cls = '', eager = false, inner = null) => (src || inner) ? `<div class="iphone${cls ? ` ${cls}` : ''}"><div class="ip-body"><span class="ip-btn" aria-hidden="true"></span><div class="ip-screen">${inner ?? img(src, alt, pre, '', eager)}</div><span class="ip-island" aria-hidden="true"></span></div></div>` : '';
 
 const ORDER = [
-  ['kyakhaya', 'Kya Khaya', 'https://kyakhaya.com', 'Indian food calorie app: snap your plate, get calories and macros.'],
-  ['ricezero', 'RiceZero', 'https://ricezero.com', 'Shirataki rice brand at 9 kcal per 100 g.'],
-  ['casualkurta', 'Casual Kurta', 'https://casualkurta.com', 'Linen and hemp kurtas made in India, sold in Europe.'],
   ['fadedtofresh', 'Faded to Fresh', 'https://fadedtofresh.shalu.ai/app/', 'Restore and colourise old photos in the browser.'],
+  ['kyakhaya', 'Kya Khaya', 'https://kyakhaya.com', 'Indian food calorie app: snap your plate, get calories and macros.'],
+  ['ricezero', 'Ricezero', 'https://ricezero.com', 'Shirataki rice brand at 9 kcal per 100 g.'],
+  ['casualkurta', 'Casual Kurta', 'https://casualkurta.com', 'Linen and hemp kurtas made in India, sold in Europe.'],
   ['forgetthetools', 'Forget the Tools', 'https://forgetthetools.com', 'Marketing research for Shopify and DTC brands.'],
   ['passiontodream', 'Passion to Dream', 'https://passiontodream.com', 'Lisbon visa, residency and work placement consultancy.'],
   ['fluentmint', 'FluentMint', 'https://fluentmint.com', 'Software income for course creators.'],
   ['callyourcode', 'CallYourCode', 'https://callyourcode.com', 'Talk to your coding agents from your phone.'],
-  ['reelgenai', 'ReelGenAI', 'https://reelgenai.com', 'Turns a business URL into reels.'],
+  ['reelgenai', 'ReelgenAI', 'https://reelgenai.com', 'Turns a business URL into reels.'],
   ['robotbonsai', 'Robot Bonsai', 'https://robotbonsai.com', 'Small robots for your desk.'],
   ['shalu', 'ShaluAI', 'https://shalu.ai', 'Friendly AI for everyday life.'],
   ['shikherverma', 'Shikher Verma', 'https://shikherverma.com', 'Personal site with an interactive project shelf.'],
   ['lktechnology', 'LK Technology', 'https://lktechnology.in', 'Software, bots and AI, with ASCII pigeons.'],
-  ['benzeneai', 'Benzene AI', 'https://benzeneai.com', 'Independent AI lab in the style of a scientific figure.'],
+  ['benzeneai', 'Benzene', 'https://benzeneai.com', 'Independent AI lab in the style of a scientific figure.'],
   ['commuterglasses', 'Commuter Glasses', 'https://commuterglasses.com', 'Sunglasses that show your ebook.'],
   ['typescriptnotebook', 'TypeScript Notebook', 'https://typescriptnotebook.com', 'Run TypeScript in the browser.'],
-  ['divyanshiverma', 'divyanshiverma.com', 'https://divyanshiverma.com', 'My own site: marketing, design and a blog.'],
+  ['divyanshiverma', 'Personal Site', 'https://divyanshiverma.com', 'My own site: marketing, design and a blog.'],
 ];
 
 const projects = ORDER.map(([slug, name, url, tagline]) => {
@@ -66,7 +66,7 @@ const projects = ORDER.map(([slug, name, url, tagline]) => {
   const pick = (base) => f(`${base}.webp`) || f(`${base}.jpg`) || f(`${base}.png`);
   const flow = (n.flow || []).map((s) => ({ ...s, src: pick(String(s.file).replace(/\.(jpg|png|webp)$/, '')) })).filter((s) => s.src);
   return {
-    slug, url: n.url || url, name: n.name && n.name.length < 32 ? n.name : name,
+    slug, url: n.url || url, name,
     tagline: n.tagline || tagline, what: n.what || '', points: n.points || [],
     dl: pick('desktop-light'), dd: n.dark === false ? null : pick('desktop-dark'), long: pick('desktop-long'),
     ml: pick('mobile-light'), md: n.dark === false ? null : pick('mobile-dark'), flow, dark: n.dark,
