@@ -106,7 +106,7 @@ ${FONTS}
   <a class="name" href="${pre}index.html">Divyanshi Verma</a>
   <nav aria-label="Main">
     <a href="${pre}index.html#work">Work</a>
-    <a href="${pre}index.html#index">Index</a>
+    <a href="${pre}index.html#all">All sites</a>
     <a href="${pre}behance.html">Case studies</a>
     <a href="${pre}index.html#about">About</a>
   </nav>
@@ -125,8 +125,8 @@ const foot = (pre) => `</main>
 
 // ---------- home ----------
 const lead = projects.slice(0, 5);
-// Hero: every client site, cycling through a browser frame and a phone frame.
-const reel = projects.filter((p) => p.slug !== 'divyanshiverma' && p.dl);
+// Hero: every site, cycling through a laptop frame and a phone frame.
+const reel = projects.filter((p) => p.dl);
 const host = (u) => u.replace(/^https?:\/\//, '').replace(/\/$/, '');
 const hero = `<section class="hx" aria-labelledby="h-hx">
   <div class="hx-head">
@@ -139,22 +139,16 @@ const hero = `<section class="hx" aria-labelledby="h-hx">
   </div>
   <div class="hx-stage">
     ${laptop(null, '', '', 'hx-laptop', false, `
-${reel.map((p, i) => `        ${img(p.dl, `${p.name} home page on desktop`, '', i ? '' : 'on', i < 2)}`).join('\n')}
+${reel.map((p, i) => `        ${img(p.dl, `${p.name} home page on desktop`, '', i ? '' : 'on', i < 2).replace('<img ', `<img data-url="${esc(host(p.url))}" `)}`).join('\n')}
       `)}
     ${phone(null, '', '', 'hx-phone', false, `
 ${reel.filter((p) => mockOf(p.ml)).map((p, i) => `        ${img(mockOf(p.ml), '', '', i ? '' : 'on', i < 2)}`).join('\n')}
       `)}
     <p class="hx-url" aria-live="polite">${esc(host(reel[0].url))}</p>
   </div>
-  <div class="hx-index">
-    <p class="hx-label">Live work</p>
-    <ol class="hx-list">
-${reel.map((p, i) => `      <li><a href="work/${p.slug}.html" data-url="${esc(host(p.url))}"${i ? '' : ' class="on"'}><span class="n">${String(i + 1).padStart(2, '0')}</span>${esc(p.name)}</a></li>`).join('\n')}
-    </ol>
-  </div>
 </section>`;
 
-const home = `${head('Divyanshi Verma, product and brand designer', 'Portfolio of Divyanshi Verma, a product and brand designer in Bangalore. Sixteen live websites and her Behance case studies.', '')}
+const home = `${head('Divyanshi Verma, product and brand designer', 'Portfolio of Divyanshi Verma, a product and brand designer in Bangalore. Seventeen live websites and her Behance case studies.', '')}
 ${hero}
 
 <section class="sec" id="work" aria-labelledby="h-work">
