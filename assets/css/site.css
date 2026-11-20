@@ -130,12 +130,6 @@ a { color: inherit; }
 .card p { margin: 0; font-size: 15px; color: var(--ink-2); }
 
 /* index table */
-.index { width: 100%; border-collapse: collapse; font-size: 16px; }
-.index th { text-align: left; font-weight: 500; color: var(--ink-2); padding: 0 12px 10px 0; border-bottom: 1px solid var(--ink); font-size: 14px; }
-.index td { padding: 14px 12px 14px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-.index td:first-child { font-weight: 600; white-space: nowrap; }
-.index a { text-underline-offset: 4px; }
-.index tr:hover td { background: color-mix(in srgb, var(--marker) 14%, transparent); }
 
 /* behance */
 .be-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
@@ -206,7 +200,6 @@ figcaption { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
   .lead-text { padding-top: 18px; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .points { grid-template-columns: 1fr; }
-  .index .hide-s { display: none; }
 }
 @media (max-width: 520px) {
   body { font-size: 16px; }
@@ -214,7 +207,6 @@ figcaption { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
   .top nav { gap: 18px; font-size: 15px; }
   .pair { grid-template-columns: 1fr; }
   .be-grid { grid-template-columns: 1fr; }
-  .index td:first-child { white-space: normal; }
   .flow { grid-auto-columns: 82%; }
   .hx-name span { display: block; padding-left: .35em; }
   .hx-list { column-gap: 18px; }

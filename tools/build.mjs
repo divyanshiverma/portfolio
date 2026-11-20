@@ -125,7 +125,6 @@ const foot = (pre) => `</main>
 
 // ---------- home ----------
 const lead = projects.slice(0, 5);
-const more = projects.slice(5, 16);
 // Hero: every client site, cycling through a browser frame and a phone frame.
 const reel = projects.filter((p) => p.slug !== 'divyanshiverma' && p.dl);
 const host = (u) => u.replace(/^https?:\/\//, '').replace(/\/$/, '');
@@ -176,25 +175,15 @@ ${lead.map((p, i) => `    <a class="lead-item" href="work/${p.slug}.html">
   </div>
 </section>
 
-<section class="sec" aria-labelledby="h-more">
-  <div class="sec-head"><h2 id="h-more">More live sites</h2><p>Brands, AI tools and personal sites. Every one has its own page.</p></div>
+<section class="sec" id="all" aria-labelledby="h-more">
+  <div class="sec-head"><h2 id="h-more">All sites</h2><p>All ${projects.length}, from brands and AI tools to personal sites. Every one has its own page.</p></div>
   <div class="grid">
-${more.map((p) => `    <a class="card" href="work/${p.slug}.html">
+${projects.map((p) => `    <a class="card" href="work/${p.slug}.html">
       <div class="thumb-device">${p.dl ? laptop(p.dl, `${p.name} home page`) : phone(p.ml, `${p.name} home page`)}</div>
       <h3>${esc(p.name)}</h3>
       <p>${esc(p.tagline)}</p>
     </a>`).join('\n')}
   </div>
-</section>
-
-<section class="sec" id="index" aria-labelledby="h-index">
-  <div class="sec-head"><h2 id="h-index">Index</h2><p>All seventeen sites, in the order I rank them.</p></div>
-  <table class="index">
-    <thead><tr><th scope="col">Project</th><th scope="col">What it is</th><th scope="col" class="hide-s">Live</th></tr></thead>
-    <tbody>
-${projects.map((p) => `      <tr><td><a href="work/${p.slug}.html">${esc(p.name)}</a></td><td>${esc(p.tagline)}</td><td class="hide-s"><a href="${esc(p.url)}" rel="noopener">${esc(new URL(p.url).hostname)}</a></td></tr>`).join('\n')}
-    </tbody>
-  </table>
 </section>
 
 <section class="sec" aria-labelledby="h-be">
