@@ -2,6 +2,7 @@
 // Run: node tools/build.mjs   (output is plain HTML, nothing is needed at serve time)
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const rd = (p) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8')); } catch { return null; } };
@@ -50,6 +51,10 @@ const phone = (src, alt, pre = '', cls = '', eager = false, inner = null) => {
   return m ? `<div class="mock-phone${cls ? ` ${cls}` : ''}">${img(m, alt, pre, '', eager)}</div>` : '';
 };
 
+// Content hash for asset URLs: a changed file gets a new URL, so no browser
+// or CDN can serve a stale copy after a deploy.
+const ver = (rel) => crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, rel))).digest('hex').slice(0, 8);
+
 const ORDER = [
   ['fadedtofresh', 'Faded to Fresh', 'https://fadedtofresh.shalu.ai/app/', 'Restore and colourise old photos in the browser.'],
   ['kyakhaya', 'Kya Khaya', 'https://kyakhaya.com', 'Indian food calorie app: snap your plate, get calories and macros.'],
@@ -96,7 +101,7 @@ const head = (title, desc, pre) => `<!doctype html>
 <link rel="icon" href="${pre}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="${pre}assets/apple-touch-icon.png">
 ${FONTS}
-<link rel="stylesheet" href="${pre}assets/css/site.css">
+<link rel="stylesheet" href="${pre}assets/css/site.css?v=${ver('assets/css/site.css')}">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -118,7 +123,7 @@ const foot = (pre) => `</main>
   <a href="mailto:divyanshi.verma18@gmail.com">divyanshi.verma18@gmail.com</a>
 </footer>
 </div>
-<script src="${pre}assets/js/site.js" defer></script>
+<script src="${pre}assets/js/site.js?v=${ver('assets/js/site.js')}" defer></script>
 </body>
 </html>
 `;
@@ -136,6 +141,18 @@ const hero = `<section class="hx" aria-labelledby="h-hx">
   <div class="hx-copy">
     <p class="hx-lede">I design websites people use and remember. ${reel.length} of them are live right now, from a photo restoration app to linen kurtas for European summers.</p>
     <div class="hx-cta"><a class="btn" href="#work">See the work</a><a class="btn ghost" href="mailto:divyanshi.verma18@gmail.com">Email me</a></div>
+    <div class="pc-row" hidden>
+      <div class="pc" role="group" aria-label="Choose a site">
+        <button class="pc-arrow pc-prev" type="button" aria-label="Previous site"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2.5L4 6l3.5 3.5"/></svg></button>
+        <div class="pc-dots" aria-hidden="true"><i data-d="-2"></i><i data-d="-1"></i><i data-d="0"></i><i data-d="1"></i><i data-d="2"></i></div>
+        <button class="pc-arrow pc-next" type="button" aria-label="Next site"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5"/></svg></button>
+        <p class="pc-count" aria-live="polite"><b>01</b> / ${String(reel.length).padStart(2, '0')}</p>
+      </div>
+      <button class="pc-pause" type="button" aria-pressed="false" aria-label="Pause the slideshow">
+        <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5"/></svg>
+        <svg class="ico" viewBox="0 0 12 12" aria-hidden="true"><path class="i-pause" d="M3 2h2v8H3zM7 2h2v8H7z"/><path class="i-play" d="M3.5 2l6 4-6 4z"/></svg>
+      </button>
+    </div>
   </div>
   <div class="hx-stage">
     ${laptop(null, '', '', 'hx-laptop', false, `
@@ -220,7 +237,7 @@ workList.forEach((p, i) => {
   if (phones.length) {
     blocks.push(`<section class="block" aria-labelledby="h-ph"><h2 id="h-ph">On a phone</h2><div class="phones">
 ${phones.map(([s, c]) => `<figure>${phone(s, `${p.name}, ${c.toLowerCase()} theme at 390 px`, pre)}<figcaption>${c}</figcaption></figure>`).join('\n')}
-</div>${p.dark === false ? `<p class="note">${esc(p.name)} has a single theme, so there is one set of captures.</p>` : ''}</section>`);
+</div></section>`);
   }
   if (p.flow.length) {
     blocks.push(`<section class="block" aria-labelledby="h-fl"><h2 id="h-fl">The flow, step by step</h2><div class="flow" tabindex="0" aria-label="Flow steps, scroll sideways">
@@ -251,6 +268,16 @@ ${blocks.join('\n')}
 ${foot(pre)}`;
   fs.writeFileSync(path.join(ROOT, 'work', `${p.slug}.html`), page);
 });
+
+// ---------- sitemap ----------
+const SITE = 'https://portfolio.divyanshiverma.com/';
+const today = new Date().toISOString().slice(0, 10);
+const urls = ['', 'behance.html', ...projects.map((p) => `work/${p.slug}.html`)];
+fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((u) => `  <url><loc>${SITE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+</urlset>
+`);
 
 // ---------- behance page ----------
 const be = `${head('Case studies, Divyanshi Verma', 'Case studies Divyanshi Verma published on Behance.', '')}

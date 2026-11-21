@@ -13,8 +13,8 @@
   "Mobile: the card goes full width with the polaroids enlarged, and the sidebar content moves below the card."
  ],
  "flow": [
-  {"file":"flow-1.jpg","caption":"Crop step after upload: the four pink handles start at the image's corners and can be dragged inwards, with Rotate 90°, Use whole photo and Choose another below. The test upload was a screenshot of the app, not an old print."},
-  {"file":"flow-2.jpg","caption":"Pack screen after the crop: a summary card shows the cropped thumbnail, '1 photo' is preselected at the sale price, and the sidebar now lists 'Photo 1, Ready to restore'. Stopped here, no payment made."}
+  {"file":"flow-1.jpg","caption":"Crop step after upload: the four pink handles start at the image's corners and can be dragged inwards, with Rotate 90°, Use whole photo and Choose another below."},
+  {"file":"flow-2.jpg","caption":"Pack screen after the crop: a summary card shows the cropped thumbnail, '1 photo' is preselected at the sale price, and the sidebar now lists 'Photo 1, Ready to restore'."}
  ],
  "shots": ["desktop-light.jpg","desktop-long.jpg","mobile-light.jpg","flow-1.jpg","flow-2.jpg"]
 }
