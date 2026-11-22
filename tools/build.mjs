@@ -135,24 +135,11 @@ const reel = projects.filter((p) => p.dl);
 const host = (u) => u.replace(/^https?:\/\//, '').replace(/\/$/, '');
 const hero = `<section class="hx" aria-labelledby="h-hx">
   <div class="hx-head">
-    <p class="hx-eyebrow">Product and brand designer, Bangalore</p>
-    <h1 id="h-hx" class="hx-name">Divyanshi <span>Verma</span></h1>
+    <h1 id="h-hx" class="hx-name">Making websites that look as good as they work</h1>
   </div>
   <div class="hx-copy">
-    <p class="hx-lede">I design websites people use and remember. ${reel.length} of them are live right now, from a photo restoration app to linen kurtas for European summers.</p>
+    <p class="hx-lede">I design and build websites with a soft spot for good typography, thoughtful details and experiences that just make sense. Simple to use and hard to forget.</p>
     <div class="hx-cta"><a class="btn" href="#work">See the work</a><a class="btn ghost" href="mailto:divyanshi.verma18@gmail.com">Email me</a></div>
-    <div class="pc-row" hidden>
-      <div class="pc" role="group" aria-label="Choose a site">
-        <button class="pc-arrow pc-prev" type="button" aria-label="Previous site"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2.5L4 6l3.5 3.5"/></svg></button>
-        <div class="pc-dots" aria-hidden="true"><i data-d="-2"></i><i data-d="-1"></i><i data-d="0"></i><i data-d="1"></i><i data-d="2"></i></div>
-        <button class="pc-arrow pc-next" type="button" aria-label="Next site"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5"/></svg></button>
-        <p class="pc-count" aria-live="polite"><b>01</b> / ${String(reel.length).padStart(2, '0')}</p>
-      </div>
-      <button class="pc-pause" type="button" aria-pressed="false" aria-label="Pause the slideshow">
-        <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5"/></svg>
-        <svg class="ico" viewBox="0 0 12 12" aria-hidden="true"><path class="i-pause" d="M3 2h2v8H3zM7 2h2v8H7z"/><path class="i-play" d="M3.5 2l6 4-6 4z"/></svg>
-      </button>
-    </div>
   </div>
   <div class="hx-stage">
     ${laptop(null, '', '', 'hx-laptop', false, `
